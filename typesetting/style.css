@@ -47,3 +47,41 @@ nav a {
   font-weight: bold;
   letter-spacing: 0.1rem;
 }
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+
+/* First paragraph indentation */
+
+section h2 + p {
+  text-indent: 2rem;
+}
+
+
+/* Links */
+
+a {
+  color: #aa6666;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #884444;
+}
+
+a:hover,
+a:focus {
+  color: #662222;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
