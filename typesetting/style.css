@@ -85,3 +85,63 @@ a:focus {
 a:focus {
   outline: none;
 }
+/* External link icon */
+
+a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  background-image: url("external-link-52.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/* Lists */
+
+ul,
+ol {
+  line-height: 1.6;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* Navigation */
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #aa6666;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #884444;
+  color: white;
+}
