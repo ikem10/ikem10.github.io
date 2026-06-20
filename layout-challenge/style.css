@@ -66,3 +66,18 @@ nav {
   position: sticky;
   top: 0;
 }
+/* Two-column layout */
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+/* Feature image with text wrapping */
+
+.feature {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
