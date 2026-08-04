@@ -213,13 +213,22 @@ function loop() {
 
   for (const ball of balls) {
 
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+    if (ball.exists) {
+
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+
+    }
 
   }
 
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
+
   requestAnimationFrame(loop);
+
 }
 
 loop();
