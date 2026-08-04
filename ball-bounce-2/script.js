@@ -5,6 +5,7 @@ const ctx = canvas.getContext("2d");
 
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
+const countDisplay = document.querySelector("p");
 
 // function to generate random number
 
@@ -179,6 +180,7 @@ class EvilCircle extends Shape {
 // Create balls
 
 const balls = [];
+let count = 0;
 
 while (balls.length < 25) {
 
@@ -194,6 +196,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+countDisplay.textContent = "Ball count: " + count;
 }
 
 
