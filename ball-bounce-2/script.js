@@ -199,7 +199,10 @@ while (balls.length < 25) {
   count++;
 countDisplay.textContent = "Ball count: " + count;
 }
-
+const evilCircle = new EvilCircle(
+  random(0, width),
+  random(0, height)
+);
 
 // Animation loop
 
